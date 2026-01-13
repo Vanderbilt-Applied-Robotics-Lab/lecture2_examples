@@ -1,0 +1,14 @@
+## This is the main Launch file for lecture 2 example
+# Applied Robotics
+# Garrison Johnston
+
+launch: 
+  - node:
+      pkg: "lecture2_example"
+      exec: "publisher_node"
+      name: "publisher_node"
+
+  - node:
+      pkg: "lecture2_example"
+      exec: "subscriber_node"
+      name: "subscriber_node"
